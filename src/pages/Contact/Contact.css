@@ -1,0 +1,60 @@
+.contact-page {
+  min-height: 100vh;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.contact-heading p {
+  color: #777;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.contact-heading h1 {
+  font-size: clamp(55px, 8vw, 100px);
+  line-height: 0.95;
+  margin-top: 20px;
+}
+
+.contact-content {
+  max-width: 400px;
+  padding-top: 50px;
+}
+
+.contact-content p {
+  color: #888;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contact-content > a {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.contact-socials a {
+  color: #aaa;
+}
+
+.contact-socials a:hover {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .contact-page {
+    display: block;
+  }
+
+  .contact-content {
+    padding-top: 60px;
+  }
+}

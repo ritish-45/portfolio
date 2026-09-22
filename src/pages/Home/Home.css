@@ -1,0 +1,21 @@
+.home-about {
+  padding: 120px 10%;
+  border-top: 1px solid #222;
+}
+
+.home-about p {
+  color: #777;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.home-about h2 {
+  max-width: 900px;
+  font-size: clamp(35px, 5vw, 70px);
+  line-height: 1.1;
+}
+
+.home-about h2 span {
+  color: #555;
+}

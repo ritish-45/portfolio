@@ -1,0 +1,48 @@
+.about-page {
+  min-height: 100vh;
+  padding: 100px 10%;
+}
+
+.about-heading p {
+  color: #777;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.about-heading h1 {
+  font-size: clamp(55px, 8vw, 100px);
+  margin-top: 15px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin-top: 70px;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.skills {
+  margin-top: 80px;
+}
+
+.skills h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list span {
+  padding: 12px 18px;
+  border: 1px solid #333;
+  color: #aaa;
+}
