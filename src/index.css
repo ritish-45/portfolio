@@ -1,3 +1,8 @@
+
+/* =====================================
+   GLOBAL RESET
+===================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,28 +11,138 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0f0f0f;
-  color: white;
-  line-height: 1.5;
+  font-family: 'DM Sans', sans-serif;
+  background: #090909;
+  color: #f5f3ef;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+/* =====================================
+   GLOBAL ELEMENTS
+===================================== */
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-button {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 p,
 span {
-  line-height: normal;
+  line-height: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* =====================================
+   COLOR SELECTION
+===================================== */
+
+::selection {
+  background: #c6a36a;
+  color: #090909;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #49402f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c6a36a;
+}
+
+/* =====================================
+   FORM ELEMENTS
+===================================== */
+
+input,
+textarea {
+  color: #f5f3ef;
+  background: #141414;
+  border: 1px solid #333;
+  outline: none;
+  padding: 12px 15px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #c6a36a;
+}
+
+/* =====================================
+   RESPONSIVE IMAGES
+===================================== */
+
+img {
+  height: auto;
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+:focus-visible {
+  outline: 2px solid #c6a36a;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
